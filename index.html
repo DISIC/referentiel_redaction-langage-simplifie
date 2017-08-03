@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Critères - Référentiel pour une rédaction de contenus alternatifs en langage simplifié</title>
+    <meta content="Référentiel pour une rédaction de contenus alternatifs en langage simplifié" name="description" />
+    <meta content="Accessibilité, Référentiel pour une rédaction de contenus alternatifs en langage simplifié, RGAA 3 2016, Référentiel Général d’Accessibilité des Administrations, critères, tests" name="keywords" />
+		<meta content="3 2016" name="version" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" media="all" href="css/rgaa.main.css" />
+		<link rel="shortcut icon" href="img/marianne_0.ico" type="image/vnd.microsoft.icon">
+	</head>
+	<body>
+		<div class="skiplinks">
+			<div class="inside">
+				<p>Accès direct&nbsp;:</p>
+				<ul>
+					<li><a href="#main">Contenu</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="rgaa-header">
+			<header role="banner" class="main-header">
+				<h1 class="slogan">Référentiel pour une rédaction de contenus alternatifs en langage simplifié</h1>
+			</header>
+		</div>
+
+			<nav id="nav" role="navigation" aria-label="menu secondaire">
+				<ul>
+					<li><span>Critères</span></li>
+					<li><a href="glossaire.html">Glossaire</a></li>
+				</ul>
+			</nav>
+		<div id="wrapper">
+			<div class="left" id="filtres">
+				<div class="bloc-lateral" aria-labelledby="titre-filtres" id="filtre-niveau">
+					<button id="titre-filtres">Filtres</button>
+					<div id="elt-filtres">
+						<div>
+						<input type="checkbox" id="filtre-tests"/><label for="filtre-tests">Afficher les tests</label>
+						</div>
+						<div>
+						<input type="checkbox" id="filtre-A"/><label for="filtre-A">Niveau <span aria-label="simple-A"><span aria-hidden="true">A</span></span></label>
+						</div>
+						<div>
+						<input type="checkbox" id="filtre-AA"/><label for="filtre-AA">Niveau <span aria-label="double-A"><span aria-hidden="true">AA</span></span></label>
+						</div>
+						<div>
+						<input type="checkbox" id="filtre-AAA"/><label for="filtre-AAA">Niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span></label>
+						</div>
+					</div>
+				</div>
+				<div class="bloc-lateral" aria-labelledby="titre-thematiques">
+					<button id="titre-thematiques">Thématiques</button>
+					<ol id="nav-thematiques">
+						<li><a href="#presentation">Présentation</a></li>
+						<li><a href="#document">Document</a></li>
+						<li><a href="#illustrations">Illustrations</a></li>
+						<li><a href="#structuration">Structuration</a></li>
+						<li><a href="#contenus">Contenus</a></li>
+						<li><a href="#comprehension">Compréhension</a></li>
+						<li><a href="#syntaxe">Syntaxe, grammaire, conjugaison</a></li>
+						
+					</ol>
+				</div>
+			</div>
+
+			<div class="right">
+			<section aria-labelledby="main-title">
+				<main id="main" role="main">
+					<h1 id="main-title">Critères</h1>
+					<h2 id="guide">Introduction</h2>
+					<div id="display-guide">
+						<p>Le référentiel pour une rédaction en langage simplifié est destiné à toute personne désirant créer ou évaluer des contenus textuels alternatifs en version facile à lire, à destination des personnes handicapées intellectuelles. Ce référentiel ne concerne que la production de contenus en facile à lire qui se présentent comme une alternative au contenu principal. Il n'évalue pas les éléments d'interfaces (menu de navigation, <span lang="en">widgets</span> annexes, etc.). À ce titre, il ne reprend que les directives relatives aux «&nbsp;Contenus&nbsp;» des recommandations facile à lire des documents de référence. En effet, ces documents contiennent d'autres recommandations destinées à produire des contenus web, comme un site web entier, ou sur support informatique, comme des DVD par exemple, destinés spécifiquement aux handicapés intellectuels.</p>
+						<p>Le référentiel pour une rédaction en langage simplifié s'appuie sur les publications de l'<a href="http://www.unapei.org/">Unapei (Fédération d'associations françaises de représentation et de défense des intérêts des personnes handicapées mentales et de leurs familles)</a>, notamment, sur le guide «&nbsp;<a href="http://www.unapei.org/IMG/pdf/Guide_ReglesFacileAlire.pdf">L'information pour tous - Règles européennes pour une information facile à lire et à comprendre (PDF, 840ko)</a>&nbsp;». La publication du <a href="http://w3.uqo.ca/litteratie/documents/guide2011_000.pdf">«&nbsp;Guide de rédaction pour une information accessible&nbsp;» (pdf, 4Mo)</a> de l'Université du Québec est également prise en compte.</p>
+						<p>Enfin, ce document s'inscrit dans le prolongement du <a href="http://references.modernisation.gouv.fr/rgaa/" >Référentiel Général d’Accessibilité des Administrations (RGAA)</a> et notamment, de son <a href="http://references.modernisation.gouv.fr/rgaa/criteres.html">référentiel technique</a>, sans lequel la prise en compte de l'accessibilité ne peut pas être mesurée. Les références entre ces deux référentiels sont nombreuses, le lecteur devrait donc avoir une certaine expérience du RGAA 3. Tous les critères de niveau triple A du RGAA qui concernent le handicap mental sont donc à prendre en compte.</p>
+						<p>Certains des critères du RGAA (critères de présentation notamment) acceptent des mécanismes de remplacement alors que les documents de référence exigent que les textes répondent aux caractéristiques de présentation sans manipulation de l'utilisateur. Par exemple, les contrastes de couleurs des textes doivent être conformes sans que l'utilisateur n'ait à sélectionner des options dans un mécanisme de remplacement mis à disposition sur le site. Certains critères peuvent donc sembler être repris du RGAA, mais c'est uniquement parce que les exigences sont différentes.</p>
+					<h3>Mode d'emploi</h3>
+					<p>Cette liste reprend les formulations du RGAA&nbsp;3. Elle a été élaborée en respectant les mêmes règles d'écriture et propose le même fonctionnement de validation par l'utilisation des 5 statuts du RGAA&nbsp;3&nbsp;:</p>
+					<ol>
+						<li>conforme&nbsp;;</li>
+						<li>non conforme&nbsp;;</li>
+						<li>non applicable&nbsp;;</li>
+						<li>non testé&nbsp;;</li>
+						<li>dérogé.</li>
+					</ol>
+					<p>Vous pouvez consulter, à ce sujet, le <a href="http://references.modernisation.gouv.fr/referentiel/guide-accompagnement-RGAA.html">guide d’accompagnement</a>&nbsp;: Comment vérifie-t-on la conformité au RGAA&nbsp;?</p>
+					<p>La liste des critères du référentiel est pensée comme une extension du RGAA&nbsp;3, indépendante du reste du référentiel technique et non obligatoire. Nous numéroterons les critères de cette thématique par le préfixe RLS (rédaction en langage simplifié). Ce référentiel est découpé, à l'image du RGAA&nbsp;3, en thématiques.</p>
+					<h4>Note importante</h4>
+					<p>Sauf mention contraire, les critères et les tests s'appliquent dans tous les contextes (web et documents en téléchargement). Chaque fois que nécessaire, des critères ou des tests spécifiques ont été créés lorsqu'ils ne s'appliquaient qu'à l'un ou l'autre de ces contextes.</p>
+					<p>Une grille d'évaluation est mise à votre disposition&nbsp;: Grille d'évaluation <a href="rls-rgaa-grille-eval.ods">(.ods, 81 ko)</a> ou <a href="rls-rgaa-grille-eval.xls">(.xls, 227ko)</a></p>
+				</div>
+
+				<section id="presentation">
+					<header>
+						<h2>RLS-1. Présentation des textes</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Pour chaque texte, utiliser une police uniforme, foncée, suffisamment grande et grasse pour favoriser la lecture et l'impression des documents. Réaliser une mise en forme des textes simple, sans colonnes ni césures.</p>
+					</header>
+					<article id="crit-rls-1-1" data-level="A">
+						<h3 class="critere">Critère RLS-1.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, la taille de la police est-elle suffisante&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.1.1">Test RLS-1.1.1&nbsp;: Pour chaque texte, la taille de la police est-elle <a href="glossaire.html#taille-police">au moins égale à 14&nbsp;px</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-2" data-level="A">
+						<h3 class="critere">Critère RLS-1.2 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, la police est-elle claire et facile à lire&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.2.1">Test RLS-1.2.1&nbsp;: Chaque texte utilise-t-il une police <a href="glossaire.html#sans-empattements">sans empattements</a>&nbsp;?</li>
+								<li id="test-rls-1.2.2">Test RLS-1.2.2&nbsp;: Chaque texte utilise-t-il une police <a href="glossaire.html#police-grasse">suffisamment grasse</a>&nbsp;?</li>
+								<li id="test-rls-1.2.3">Test RLS-1.2.3&nbsp;: La police utilisée pour les textes vérifie-t-elle ces conditions&nbsp;?
+									<ul>
+										<li>L'<a href="glossaire.html#interlettrage">interlettrage par défaut de la police est suffisant</a>&nbsp;;</li>
+										<li>L'interlettrage n'est pas réduit ou supprimé.</li>
+									</ul>
+								</li>
+								<li id="test-rls-1.2.4">Test RLS-1.2.4&nbsp;: Les textes ne sont pas en italique. Cette règle est-elle respectée&nbsp;?</li>
+								<li id="test-rls-1.2.5">Test RLS-1.2.5&nbsp;: Les textes ne possèdent <a href="glossaire.html#aucune-decoration">aucune décoration</a> (soulignement, ombre portée, contour, etc.), autre que la mise en gras ou le soulignement pour les liens. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-3" data-level="A">
+						<h3 class="critere">Critère RLS-1.3 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Chaque texte utilise-t-il <a href="glossaire.html#une-seule-police">une seule police</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.3.1">Test RLS-1.3.1&nbsp;: Chaque texte utilise-t-il <a href="glossaire.html#une-seule-police">une seule police</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-4" data-level="AAA">
+						<h3 class="critere">Critère RLS-1.4 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, la couleur de police et le contraste ne diminuent pas la lisibilité. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.4.1">Test RLS-1.4.1&nbsp;: Les textes vérifient-ils ces conditions&nbsp;?
+									<ul>
+										<li>Les textes sont en couleur foncée sur un fond clair&nbsp;;</li>
+										<li>Le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins.</li>
+									</ul>
+								</li>
+								<li id="test-rls-1.4.2">Test RLS-1.4.2&nbsp;: À l'exception des liens, pour chaque texte, y a-t-il une seule déclaration de couleur de police&nbsp;?
+							</ul>
+					</article>
+					<article id="crit-rls-1-5" data-level="AAA">
+						<h3 class="critere">Critère RLS-1.5 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, le contenu n'est pas présenté en colonnes. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.5.1">Test RLS-1.5.1&nbsp;: Pour chaque texte, le contenu n'est pas présenté en colonnes. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-6" data-level="AAA">
+						<h3 class="critere">Critère RLS-1.6 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les mots ne sont pas écrits en majuscules <a href="#cas-part-1.6">(hors cas particuliers)</a>. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.6.1">Test RLS-1.6.1&nbsp;:  Pour chaque texte, les mots ne sont pas écrits en majuscules <a href="#cas-part-1.6">(hors cas particuliers)</a>. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-7" data-level="A">
+						<h3 class="critere">Critère RLS-1.7 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, chaque phrase débute-t-elle sur une nouvelle ligne&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.7.1">Test RLS-1.7.1&nbsp;: Pour chaque texte, chaque phrase débute-t-elle sur une nouvelle ligne&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-8" data-level="A">
+						<h3 class="critere">Critère RLS-1.8 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, les mots ne possèdent pas de <a href="glossaire.html#cesures">césures</a>. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.8.1">Test RLS-1.8.1&nbsp;: Chaque texte vérifie-t-il ces conditions&nbsp;?
+									<ul>
+										<li>Les mots ne possèdent pas de <a href="glossaire.html#cesures">césures</a>&nbsp;;</li>
+										<li>Les mots n'utilisent pas la déclaration CSS <code lang="en">word-wrap&nbsp;: break-word</code> ou <code lang="en">overflow-wrap&nbsp;: break-word</code>&nbsp;;</li>
+										<li>Les mots n'utilisent pas la déclaration CSS <code lang="en">hyphens&nbsp;: auto</code> ou <code lang="en">hyphens&nbsp;: manual</code>.</li>
+										
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-9" data-level="A">
+						<h3 class="critere">Critère RLS-1.9 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, la première ligne de chaque paragraphe n'est pas en retrait. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.9.1">Test RLS-1.9.1&nbsp;: Pour chaque texte, la première ligne de chaque paragraphe n'est pas en retrait. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-10" data-level="AAA">
+						<h3 class="critere">Critère RLS-1.10 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] La mise en page est-elle <a href="glossaire.html#mise-page-simple">simple et facile à parcourir</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.10.1">Test RLS-1.10.1&nbsp;: Chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a> est-il dans un format courant (A4 ou A5 par exemple)&nbsp;?</li>
+								<li id="test-rls-1.10.2">Test RLS-1.10.2&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, la mise en page est-elle <a href="glossaire.html#mise-page-simple">simple et facile à parcourir</a>&nbsp;?</li>
+								<li id="test-rls-1.10.3">Test RLS-1.10.3&nbsp;: Sur chaque page web, la mise en page est-elle <a href="glossaire.html#mise-page-simple">simple et facile à parcourir</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-11" data-level="AAA">
+						<h3 class="critere">Critère RLS-1.11 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque document en téléchargement, les marges extérieures sont-elles suffisantes&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.11.1">Test RLS-1.11.1&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, les marges extérieures sont-elles au moins égales à 3&nbsp;cm&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-12" data-level="A">
+						<h3 class="critere">Critère RLS-1.12 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Y a-t-il <a href="glossaire.html#peu-de-texte">peu de texte</a> sur la page&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.12.1">Test RLS-1.12.1&nbsp;: Sur chaque page web, y a-t-il <a href="glossaire.html#peu-de-texte">peu de texte</a> dans le contenu principal&nbsp;?</li>
+								<li id="test-rls-1.12.2">Test RLS-1.12.2&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, y-a-t-il <a href="glossaire.html#peu-de-texte">peu de texte</a> sur chaque page&nbsp;?</li>
+							</ul>
+							<p><a href="#eval-qualitative">Lire la note concernant l'évaluation qualitative.</a></p>
+					</article>
+					<article id="crit-rls-1-13" data-level="A">
+						<h3 class="critere">Critère RLS-1.13 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, l’espace entre les lignes et les paragraphes est-il suffisant&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.13.1">Test RLS-1.13.1&nbsp;: Pour chaque texte, la valeur de l’interligne est-elle au moins égale à 1,5 fois la taille du texte&nbsp;?</li>
+								<li id="test-rls-1.13.2">Test RLS-1.13.2&nbsp;: Pour chaque texte, la valeur de l'espacement entre deux paragraphes est-elle au moins égale à 1,5 fois la taille du texte&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-1-14" data-level="A">
+						<h3 class="critere">Critère RLS-1.14 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Chaque texte est-il aligné à gauche&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-1.14.1">Test RLS-1.14.1&nbsp;: Chaque texte est-il aligné à gauche&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+
+				<section id="document">
+					<header>
+						<h2>RLS-2. Documents</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Intégrer le logo «&nbsp;Facile à lire et à comprendre&nbsp;» à proximité des textes. Utiliser des marges extérieures suffisamment larges. Numéroter les pages des documents en téléchargement. Simplifier la mise en page des textes.</p>
+					</header>
+					<article id="crit-rls-2-1" data-level="A">
+						<h3 class="critere">Critère RLS-2.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Chaque texte a-t-il été <a href="glossaire.html#collaboration">rédigé en collaboration avec des personnes handicapées intellectuelles</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-2.1.1">Test RLS-2.1.1&nbsp;: Chaque texte a-t-il été <a href="glossaire.html#collaboration">rédigé en collaboration avec des personnes handicapées intellectuelles</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-2-2" data-level="AAA">
+						<h3 class="critere">Critère RLS-2.2 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Le <a href="glossaire.html#logo-facile-a-lire">logo «&nbsp;Facile à lire&nbsp;»</a> est-il présent à proximité du texte&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-2.2.1">Test RLS-2.2.1&nbsp;: Pour chaque page web, le <a href="glossaire.html#logo-facile-a-lire">logo «&nbsp;Facile à lire&nbsp;»</a> est-il présent à proximité de chaque texte&nbsp;?</li>
+								<li id="test-rls-2.2.2">Test RLS-2.2.2&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, le <a href="glossaire.html#logo-facile-a-lire">logo «&nbsp;Facile à lire&nbsp;»</a> est-il présent sur la page de couverture&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-2-3" data-level="AAA">
+						<h3 class="critere">Critère RLS-2.3 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, les pages sont-elles numérotées&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-2.3.1">Test RLS-2.3.1&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, les pages sont-elles numérotées&nbsp;?</li>
+								<li id="test-rls-2.3.2">Test RLS-2.3.2&nbsp;: Pour chaque <a href="glossaire.html#document-telechargement">document en téléchargement</a>, la numérotation fait-elle apparaître, si nécessaire, le nombre total de pages&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+
+				<section id="illustrations">
+					<header>
+						<h2>RLS-3. Illustrations</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Utiliser des illustrations simples pour favoriser la compréhension des textes. Utiliser des jeux d'illustrations homogènes pour un même texte, toujours utiliser la même illustration pour illustrer la même idée. Réaliser des tableaux et graphiques simples et toujours les accompagner d'une description textuelle adjacente.</p>
+					</header>
+					<article id="crit-rls-3-1" data-level="A">
+						<h3 class="critere">Critère RLS-3.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, des illustrations (photographies, dessins, symboles) sont-elles présentes pour aider à la compréhension&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.1.1">Test RLS-3.1.1&nbsp;: Pour chaque texte, des illustrations (photographies, dessins, symboles) sont-elles présentes pour aider à la compréhension&nbsp;?</li>
+								<li id="test-rls-3.1.2">Test RLS-3.1.2&nbsp;: Chaque illustration (photographies, dessins, symboles) utilisée pour aider à la compréhension du texte auquel elle est associée est-elle pertinente&nbsp;?</li>
+							</ul>
+					</article>
+					
+					<article id="crit-rls-3-2" data-level="AAA">
+						<h3 class="critere">Critère RLS-3.2 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Chaque illustration utilisée pour aider à la compréhension du texte <a href="glossaire.html#un-seul-message">transmet-elle un seul message</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.2.1">Test RLS-3.2.1&nbsp;: Chaque illustration utilisée pour aider à la compréhension du texte <a href="glossaire.html#un-seul-message">transmet-elle un seul message</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-3-3" data-level="AAA">
+						<h3 class="critere">Critère RLS-3.3 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Chaque illustration utilisée pour aider à la compréhension du texte est-elle <a href="glossaire.html#adapte-au-public">adaptée au public concerné</a> par le texte&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.3.1">Test RLS-3.3.1&nbsp;: Chaque illustration utilisée pour aider à la compréhension du texte est-elle <a href="glossaire.html#adapte-au-public">adaptée au public concerné</a> par le texte&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-3-4" data-level="AAA">
+						<h3 class="critere">Critère RLS-3.4 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les illustrations utilisées pour aider à la compréhension du texte ont-elles un style homogène&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.4.1">Test RLS-3.4.1&nbsp;: Pour chaque texte, les illustrations utilisées pour aider à la compréhension du texte ont-elles un style homogène&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-3-5" data-level="AAA">
+						<h3 class="critere">Critère RLS-3.5 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, une même illustration est-elle utilisée dans le même contexte à chaque fois&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.5.1">Test RLS-3.5.1&nbsp;: Pour chaque texte, une même illustration est-elle utilisée dans le même contexte à chaque fois&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-3-6" data-level="AAA">
+						<h3 class="critere">Critère RLS-3.6 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Les représentations de données sont-elles simples&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-3.6.1">Test RLS-3.6.1&nbsp;: Les tableaux sont-ils des <a href="glossaire.html#tableau">tableaux simples</a>&nbsp;?</li>
+								<li id="test-rls-3.6.2">Test RLS-3.6.2&nbsp;: Les graphiques sont-ils des <a href="glossaire.html#representation-simple">représentations simples des données</a>&nbsp;?</li>
+								<li id="test-rls-3.6.3">Test RLS-3.6.3&nbsp;: Pour chaque tableau ou graphique, un texte adjacent décrit-il son contenu&nbsp;?</li>
+								<li id="test-rls-3.6.4">Test RLS-3.6.4&nbsp;: Chaque texte décrivant un tableau ou un graphique est-il pertinent&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+	
+				<section id="structuration">
+					<header>
+						<h2>RLS-4. Structuration de l'information</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Utiliser une ponctuation simple et des listes à puces. Ne pas utiliser de notes de bas de page.</p>
+					</header>
+					<article id="crit-rls-4-1" data-level="A">
+						<h3 class="critere">Critère RLS-4.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Les phrases sont-elles courtes&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-4.1.1">Test RLS-4.1.1&nbsp;: Chaque phrase vérifie-t-elle une de ces conditions&nbsp;?
+									<ul>
+										<li>Chaque phrase véhicule une seule idée&nbsp;;</li>
+										<li>Chaque phrase traite d'une seule action.</li>
+									</ul>
+								</li>
+								<li id="test-rls-4.1.2">Test RLS-4.1.2&nbsp;: Chaque phrase est-elle construite, si possible, sur le modèle&nbsp;: un sujet, un verbe et un complément&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-4-2" data-level="AA">
+						<h3 class="critere">Critère RLS-4.2 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque phrase, la ponctuation est-elle simple&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-4.2.1">Test RLS-4.2.1&nbsp;: Chaque phrase vérifie-t-elle ces conditions&nbsp;?
+									<ul>
+										<li>Le point-virgule «&nbsp;;&nbsp;» n'est pas employé&nbsp;;</li>
+										<li>Les parenthèses «&nbsp;(&nbsp;)&nbsp;» ne sont pas employées&nbsp;;</li>
+										<li>Les crochets «&nbsp;[&nbsp;]&nbsp;» ne sont pas employés&nbsp;;</li>
+										<li>Les points de suspension «&nbsp;&hellip;&nbsp;» ne sont pas employés&nbsp;;</li>
+										<li>Le tiret «&nbsp;-&nbsp;» n'est pas employé.</li>
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-4-3" data-level="AAA">
+						<h3 class="critere">Critère RLS-4.3 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] L'<a href="glossaire.html#apparence-liste">apparence</a> de chaque liste d'éléments n'est pas modifiée. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-4.3.1">Test RLS-4.3.1&nbsp;: Chaque liste ordonnée conserve-t-elle l'<a href="glossaire.html#apparence-liste">apparence d'une liste</a> ordonnée&nbsp;?</li>
+								<li id="test-rls-4.3.2">Test RLS-4.3.2&nbsp;: Chaque liste non ordonnée conserve-t-elle l'<a href="glossaire.html#apparence-liste">apparence d'une liste</a> non ordonnée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-4-4" data-level="AAA">
+						<h3 class="critere">Critère RLS-4.4 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Les textes ne renvoient pas à des notes de bas de page. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-4.4.1">Test RLS-4.4.1&nbsp;: Les textes ne renvoient pas à des notes de bas de page. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+	
+				<section id="contenus">
+					<header>
+						<h2>RLS-5. Contenus</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Écrire les nombres en chiffres arabes et les dates en toutes lettres. Ne pas utiliser de pourcentages, de grands nombres ou de chiffres romains. Ne pas utiliser de caractères spéciaux ou de mots de langue étrangère, sauf s'ils sont courants.</p>
+					</header>
+					<article id="crit-rls-5-1" data-level="AAA">
+						<h3 class="critere">Critère RLS-5.1 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les nombres sont-ils <a href="glossaire.html#ecriture-nombres">écrits en chiffres arabes</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-5.1.1">Test RLS-5.1.1&nbsp;: Pour chaque texte, les nombres sont-ils <a href="glossaire.html#ecriture-nombres">écrits en chiffres arabes</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-5-2" data-level="AAA">
+						<h3 class="critere">Critère RLS-5.2 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les pourcentages ou <a href="glossaire.html#grands-nombres">grands nombres</a> ne sont pas utilisés. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-5.2.1">Test RLS-5.2.1&nbsp;: Pour chaque texte, les pourcentages ou <a href="glossaire.html#grands-nombres">grands nombres</a> ne sont pas utilisés. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-5-3" data-level="AAA">
+						<h3 class="critere">Critère RLS-5.3 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les dates sont-elles écrites en toutes lettres&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-5.3.1">Test RLS-5.3.1&nbsp;: Pour chaque texte, les dates vérifient-elles ces conditions&nbsp;?
+									<ul>
+										<li>La date n'utilise pas le format «&nbsp;jj/mm/aaaa&nbsp;»&nbsp;;</li>
+										<li>Le mois est écrit en toutes lettres.</li>
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-5-4" data-level="AAA">
+						<h3 class="critere">Critère RLS-5.4 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les <a href="glossaire.html#caracteres-speciaux">caractères spéciaux</a> ne sont pas utilisés. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-5.4.1">Test RLS-5.4.1&nbsp;: Pour chaque texte, les <a href="glossaire.html#caracteres-speciaux">caractères spéciaux</a> ne sont pas utilisés. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-5-5" data-level="AAA">
+						<h3 class="critere">Critère RLS-5.5 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, chaque <a href="glossaire.html#mot-etranger-repandu">mot étranger doit être suffisamment répandu</a> pour être utilisé. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-5.5.1">Test RLS-5.5.1&nbsp;: Pour chaque texte, chaque <a href="glossaire.html#mot-etranger-repandu">mot étranger doit être suffisament répandu</a> pour être utilisé. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+
+				<section id="comprehension">
+					<header>
+						<h2>RLS-6. Compréhension</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Présenter les informations dans un ordre logique ou chronologique, regrouper les informations d'un même sujet, placer les informations importantes en début de texte, expliciter et donner des exemples pour les idées et termes compliqués.</p>
+					</header>
+
+					<article id="crit-rls-6-1" data-level="A">
+						<h3 class="critere">Critère RLS-6.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, les informations sont-elles présentées dans un ordre logique ou chronologique&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.1.1">Test RLS-6.1.1&nbsp;: Pour chaque texte, les informations sont-elles présentées dans un ordre logique ou chronologique&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-2" data-level="AAA">
+						<h3 class="critere">Critère RLS-6.2 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les informations sont-elles organisées clairement&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.2.1">Test RLS-6.2.1&nbsp;: Pour chaque texte, les informations importantes sont-elles placées au début du texte&nbsp;?</li>
+								<li id="test-rls-6.2.2">Test RLS-6.2.2&nbsp;: Pour chaque texte, les informations qui traitent d'un même sujet sont-elles regroupées&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-3" data-level="AA">
+						<h3 class="critere">Critère RLS-6.3 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Chaque texte possède-t-il, si nécessaire, <a href="glossaire.html#texte-introduction">une introduction</a> pertinente&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.3.1">Test RLS-6.3.1&nbsp;: Chaque texte possède-t-il, si nécessaire, <a href="glossaire.html#texte-introduction">une introduction</a>&nbsp;?</li>
+								<li id="test-rls-6.3.2">Test RLS-6.3.2&nbsp;: Chaque <a href="glossaire.html#texte-introduction">introduction</a> est-elle pertinente&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-4" data-level="AAA">
+						<h3 class="critere">Critère RLS-6.4 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, le jargon, les expressions idiomatiques, métaphores ou constructions complexes ne sont pas employés. Cette règle est-elle respectée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.4.1">Test RLS-6.4.1&nbsp;: Chaque texte vérifie-t-il ces conditions&nbsp;?
+									<ul>
+										<li>Des termes issus d'un jargon ne sont pas présents&nbsp;;</li>
+										<li>Les <a href="glossaire.html#abreviation-contraction">abréviations et les contractions</a> ne sont pas présentes&nbsp;;</li>
+										<li>Les métaphores ne sont pas présentes&nbsp;;</li>
+										<li>Les concepts abstraits ne sont pas présents&nbsp;;</li>
+										<li>Les jeux de mots ne sont pas présents&nbsp;;</li>
+										<li>Toute expression idiomatique ou autre figure de style complexe n'est pas présente.</li>
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-5" data-level="AA">
+						<h3 class="critere">Critère RLS-6.5 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Chaque texte utilise-t-il un langage <a href="glossaire.html#adapte-au-public">adapté au public concerné</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.5.1">Test RLS-6.5.1&nbsp;: Chaque texte utilise-t-il un langage <a href="glossaire.html#adapte-au-public">adapté au public concerné</a>&nbsp;?</li>
+							</ul>
+							<p><a href="#eval-qualitative">Lire la note concernant l'évaluation qualitative.</a></p>
+					</article>
+					<article id="crit-rls-6-6" data-level="AAA">
+						<h3 class="critere">Critère RLS-6.6 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Chaque texte est-il compréhensible&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.6.1">Test RLS-6.6.1&nbsp;: Pour chaque texte, le sujet est-il expliqué clairement&nbsp;?</li>
+								<li id="test-rls-6.6.2">Test RLS-6.6.2&nbsp;: Le texte ne comporte pas d'informations inutiles créant la confusion dans la compréhension. Cette règle est-elle respectée&nbsp;?</li>
+								<li id="test-rls-6.6.3">Test RLS-6.6.3&nbsp;: Pour chaque texte, les pronoms sont-ils suffisamment explicites&nbsp;?</li>
+								<li id="test-rls-6.6.4">Test RLS-6.6.4&nbsp;: Pour chaque texte les titres sont-ils clairs et faciles à comprendre&nbsp;?</li>
+								<li id="test-rls-6.6.5">Test RLS-6.6.5&nbsp;: Pour chaque texte, la hiérarchie des titres <a href="glossaire.html#hierarchie-profonde">n'est pas trop profonde</a>. Cette règle est-elle respectée&nbsp;?</li>
+							</ul>
+							<p><a href="#eval-qualitative">Lire la note concernant l'évaluation qualitative.</a></p>
+					</article>
+					<article id="crit-rls-6-7" data-level="A">
+						<h3 class="critere">Critère RLS-6.7 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>] Pour chaque texte, les éléments (concept, idée, terme&hellip;) qui nécessitent un niveau de lecture plus avancé que le premier cycle de l’enseignement secondaire sont-ils explicités&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.7.1">Test RLS-6.7.1&nbsp;: Pour chaque texte, chaque élément qui nécessite un niveau de lecture plus avancé que le premier cycle de l’enseignement secondaire vérifie-t-il une de ces conditions&nbsp;?
+									<ul>
+										<li>L'élément est accompagné d'une définition en langage simplifié&nbsp;;</li>
+										<li>L'élément est accompagné d'une explication.</li>
+									</ul>
+								</li>
+								<li id="test-rls-6.7.2">Test RLS-6.7.2&nbsp;: Chaque élément explicité vérifie-t-il une de ces conditions&nbsp;?
+									<ul>
+										<li>La définition en langage simplifié est pertinente&nbsp;;</li>
+										<li>L'explication est pertinente.</li>
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-8" data-level="AA">
+						<h3 class="critere">Critère RLS-6.8 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque texte, chaque élément (concept, idée, terme&hellip;) qui nécessite un niveau de lecture plus avancé que le premier cycle de l’enseignement secondaire est-il accompagné d'un exemple de la vie quotidienne&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.8.1">Test RLS-6.8.1&nbsp;: Pour chaque texte, chaque élément (concept, idée, terme&hellip;) qui nécessite un niveau de lecture plus avancé que le premier cycle de l’enseignement secondaire est-il accompagné d'un exemple de la vie quotidienne&nbsp;?</li>
+								<li id="test-rls-6.8.2">Test RLS-6.8.2&nbsp;: Chaque exemple de la vie quotidienne est-il pertinent&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-6-9" data-level="AAA">
+						<h3 class="critere">Critère RLS-6.9 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, les informations importantes sont-elles répétées&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.9.1">Test RLS-6.9.1&nbsp;: Pour chaque texte, les informations importantes sont-elles répétées&nbsp;?</li>
+							</ul>
+							<p><a href="#eval-qualitative">Lire la note concernant l'évaluation qualitative.</a></p>
+					</article>
+					<article id="crit-rls-6-10" data-level="AAA">
+						<h3 class="critere">Critère RLS-6.10 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Pour chaque texte, chaque élément complexe est-il explicité plus d'une fois&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-6.10.1">Test RLS-6.10.1&nbsp;: Pour chaque texte, chaque élément complexe est-il explicité plus d'une fois&nbsp;?</li>
+							</ul>
+							<p><a href="#eval-qualitative">Lire la note concernant l'évaluation qualitative.</a></p>
+					</article>
+				</section>
+
+				<section id="syntaxe">
+					<header>
+						<h2>RLS-7. Syntaxe, grammaire, conjugaison</h2>
+						<h3 class="reco">Recommandations&nbsp;:</h3>
+						<p>Écrire les textes au présent. Utiliser uniquement la forme active et des phrases affirmatives. S'adresser directement au lecteur. Ne pas utiliser de synonymes pour désigner plusieurs fois une même chose.</p>
+					</header>
+
+					<article id="crit-rls-7-1" data-level="AAA">
+						<h3 class="critere">Critère RLS-7.1 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>] Chaque texte doit si possible être écrit au présent&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-7.1.1">Test RLS-7.1.1&nbsp;: Chaque texte vérifie-t-il ces conditions&nbsp;?
+									<ul>
+										<li>Les verbes sont conjugués au présent, si possible&nbsp;;</li>
+										<li>Le passé n'est pas employé&nbsp;;</li>
+										<li>Le subjonctif n'est pas employé&nbsp;;</li>
+										<li>Les participes présents ne sont pas employés.</li>
+									</ul>
+								</li>
+							</ul>
+					</article>
+					<article id="crit-rls-7-2" data-level="AA">
+						<h3 class="critere">Critère RLS-7.2 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque phrase, <a href="glossaire.html#forme-affirmative">la forme affirmative</a> doit si possible être employée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-7.2.1">Test RLS-7.2.1&nbsp;: Pour chaque phrase, <a href="glossaire.html#forme-affirmative">la forme affirmative</a> doit si possible,être employée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-7-3" data-level="AA">
+						<h3 class="critere">Critère RLS-7.3 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque phrase, <a href="glossaire.html#voix-active">la voix active</a> doit si possible être employée&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-7.3.1">Test RLS-7.3.1&nbsp;: Pour chaque phrase, <a href="glossaire.html#voix-active">la voix active</a> doit si possible être employée&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-7-4" data-level="AA">
+						<h3 class="critere">Critère RLS-7.4 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque texte, l'auteur s'adresse-t-il, si nécessaire, <a href="glossaire.html#directement-au-lecteur">directement au lecteur</a>&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-7.4.1">Test RLS-7.4.1&nbsp;: Pour chaque texte, l'auteur s'adresse-t-il, si nécessaire, <a href="glossaire.html#directement-au-lecteur">directement au lecteur</a>&nbsp;?</li>
+							</ul>
+					</article>
+					<article id="crit-rls-7-5" data-level="AA">
+						<h3 class="critere">Critère RLS-7.5 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] Pour chaque texte, le même mot est-il utilisé pour désigner une même chose&nbsp;?</h3>
+							<ul>
+								<li id="test-rls-7.5.1">Test RLS-7.5.1&nbsp;: Pour chaque texte, le même mot est-il utilisé pour désigner une même chose&nbsp;?</li>
+							</ul>
+					</article>
+				</section>
+
+				<section>
+					<h2 id="eval-qualitative">Note concernant l'évaluation qualitative</h2>
+					<p>Certains critères n'ont pas pu être rendus opérationnels en raison de la nature qualitative de leur évaluation. Aucune méthode stricte de mesure ne peut être mise en place et aucune référence ou échelle d'évaluation n'existe pour les évaluer. C'est à l'auditeur d'évaluer la validité de ces critères lors de la lecture du texte et de soumettre le texte à des personnes handicapées intellectuelles pour valider la compréhension et la lisibilité, selon les critères visés.</p>
+					<p></p>
+				</section>			
+				
+				<section class="particulier">
+					<h1 id="cas-part">Cas particuliers</h1>
+					<h2 id="cas-part-1.6">Critère RLS-1.6</h2>
+					<p>Il existe une gestion de cas particuliers lorsque le mot est un sigle, par exemple, UNAPEI, SNCF, RGAA... Dans cette situation, le critère est non applicable.</p>
+				</section>
+			</main>
+			</section>
+		</div>
+	</div>
+
+	<footer id="footer" role="contentinfo" class="adapted">
+		<h2>Licence</h2>
+		<p><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l’action publique" /> Ce document est un document de l’État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="http://references.modernisation.gouv.fr/">references.modernisation.gouv.fr</a>. Voir les conditions d’utilisation de la licence dans les <a href="http://references.modernisation.gouv.fr/mentions-legales">mentions légales</a>.</p>
+	<hr/>
+	<div class="legal-info">
+		<p>Réalisation SGMAP - 2017</p>
+	</div>
+	</footer>
+<script src="js/filtres.js"></script>
+</body>
+</html>
